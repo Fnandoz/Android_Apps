@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="fernando.databaseteste.MainActivity">
+
+    <TextView
+        android:text="Estado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/nomeEstadoEdit"
+        android:layout_alignBaseline="@+id/ufEstadoEdit"
+        android:layout_alignBottom="@+id/ufEstadoEdit"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Estado"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <Button
+        android:text="Salvar Estado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomeEstadoEdit"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/salvarEstado"
+        android:textAllCaps="false" />
+
+    <EditText
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/ufEstadoEdit"
+        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:hint="UF"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:singleLine="true"
+        android:textAllCaps="true" />
+
+    <TextView
+        android:text="Municipio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/salvarEstado"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp"
+        android:id="@+id/textView2" />
+
+    <Button
+        android:text="Salvar Município"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listaEstadosBtn"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/salvarMunicipioBtn"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ufMunicipioText"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp"
+        android:text="-"
+        android:layout_alignLeft="@+id/listaEstadosBtn"
+        android:layout_alignStart="@+id/listaEstadosBtn"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/nomeMunicipioEdit"
+        android:inputType="text"
+        android:hint="Município"
+        android:singleLine="true"
+        android:layout_alignTop="@+id/ufMunicipioText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Estados"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/listaEstadosBtn"
+        android:textAllCaps="false"
+        android:layout_below="@+id/ufMunicipioText"
+        android:layout_toRightOf="@+id/salvarMunicipioBtn"
+        android:layout_toEndOf="@+id/salvarMunicipioBtn"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp" />
+
+    <Button
+        android:text="Listar Estados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listarMunicipiosbutton"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/listarEstadosbutton" />
+
+    <Button
+        android:text="Listar  Municípios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listarMunicipiosbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
